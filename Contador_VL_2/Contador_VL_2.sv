@@ -8,7 +8,7 @@ begin
 if (CLEAR)
 		begin
 		out <= 4'd0 ;
-		count <= 1'b1;
+		count <= 1'b0;
 		end
 else
 	if(count == 1'b0)
