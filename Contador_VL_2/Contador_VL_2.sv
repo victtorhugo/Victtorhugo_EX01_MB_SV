@@ -1,11 +1,11 @@
-module contador_VL_2 (input logic cp, clear, 
+module contador_VL_2 (input logic CP, CLEAR, 
 							output logic [3:0] out);
 							logic count;
 
-always_ff @(posedge cp or posedge clear)
+always_ff @(posedge CP or posedge CLEAR)
 	
 begin
-if (clear)
+if (CLEAR)
 		begin
 		out <= 4'd0 ;
 		count <= 1'b1;
