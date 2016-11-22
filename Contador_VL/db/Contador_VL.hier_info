@@ -1,0 +1,17 @@
+|Contador_VL
+CLEAR => out[0]~reg0.ACLR
+CLEAR => out[1]~reg0.ACLR
+CLEAR => out[2]~reg0.ACLR
+CLEAR => out[3]~reg0.ACLR
+CLEAR => cont.ACLR
+CP => out[0]~reg0.CLK
+CP => out[1]~reg0.CLK
+CP => out[2]~reg0.CLK
+CP => out[3]~reg0.CLK
+CP => cont.CLK
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
