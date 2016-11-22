@@ -1,17 +1,17 @@
 |Contador_VL
-reset => saida[0]~reg0.ACLR
-reset => saida[1]~reg0.ACLR
-reset => saida[2]~reg0.ACLR
-reset => saida[3]~reg0.ACLR
+reset => out[0]~reg0.ACLR
+reset => out[1]~reg0.ACLR
+reset => out[2]~reg0.ACLR
+reset => out[3]~reg0.ACLR
 reset => cont.ACLR
-clock => saida[0]~reg0.CLK
-clock => saida[1]~reg0.CLK
-clock => saida[2]~reg0.CLK
-clock => saida[3]~reg0.CLK
+clock => out[0]~reg0.CLK
+clock => out[1]~reg0.CLK
+clock => out[2]~reg0.CLK
+clock => out[3]~reg0.CLK
 clock => cont.CLK
-saida[0] <= saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-saida[1] <= saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-saida[2] <= saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-saida[3] <= saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

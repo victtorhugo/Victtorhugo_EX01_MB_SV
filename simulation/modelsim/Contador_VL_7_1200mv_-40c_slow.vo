@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
-// DATE "11/22/2016 09:26:16"
+// DATE "11/22/2016 09:48:23"
 
 // 
 // Device: Altera EP4CE6E22A7 Package TQFP144
@@ -32,16 +32,16 @@
 module Contador_VL (
 	reset,
 	clock,
-	saida);
+	out);
 input 	reset;
 input 	clock;
-output 	[3:0] saida;
+output 	[3:0] out;
 
 // Design Ports Information
-// saida[0]	=>  Location: PIN_7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// saida[1]	=>  Location: PIN_1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// saida[2]	=>  Location: PIN_11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// saida[3]	=>  Location: PIN_10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[0]	=>  Location: PIN_7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[1]	=>  Location: PIN_1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[2]	=>  Location: PIN_11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[3]	=>  Location: PIN_10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // clock	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // reset	=>  Location: PIN_24,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
@@ -61,80 +61,80 @@ tri1 devoe;
 initial $sdf_annotate("Contador_VL_7_1200mv_-40c_v_slow.sdo");
 // synopsys translate_on
 
-wire \saida[0]~output_o ;
-wire \saida[1]~output_o ;
-wire \saida[2]~output_o ;
-wire \saida[3]~output_o ;
+wire \out[0]~output_o ;
+wire \out[1]~output_o ;
+wire \out[2]~output_o ;
+wire \out[3]~output_o ;
 wire \clock~input_o ;
 wire \clock~inputclkctrl_outclk ;
-wire \saida[0]~11_combout ;
+wire \out[0]~11_combout ;
 wire \reset~input_o ;
 wire \reset~inputclkctrl_outclk ;
-wire \saida[0]~reg0_q ;
-wire \saida[1]~4_cout ;
-wire \saida[1]~6 ;
-wire \saida[2]~7_combout ;
-wire \saida[2]~reg0_q ;
-wire \saida[2]~8 ;
-wire \saida[3]~9_combout ;
-wire \saida[3]~reg0_q ;
+wire \out[0]~reg0_q ;
+wire \out[1]~4_cout ;
+wire \out[1]~6 ;
+wire \out[2]~7_combout ;
+wire \out[2]~reg0_q ;
+wire \out[2]~8 ;
+wire \out[3]~9_combout ;
+wire \out[3]~reg0_q ;
 wire \cont~0_combout ;
 wire \cont~1_combout ;
 wire \cont~q ;
-wire \saida[1]~5_combout ;
-wire \saida[1]~reg0_q ;
+wire \out[1]~5_combout ;
+wire \out[1]~reg0_q ;
 
 
 // Location: IOOBUF_X0_Y21_N9
-cycloneive_io_obuf \saida[0]~output (
-	.i(\saida[0]~reg0_q ),
+cycloneive_io_obuf \out[0]~output (
+	.i(\out[0]~reg0_q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\saida[0]~output_o ),
+	.o(\out[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \saida[0]~output .bus_hold = "false";
-defparam \saida[0]~output .open_drain_output = "false";
+defparam \out[0]~output .bus_hold = "false";
+defparam \out[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOOBUF_X0_Y23_N2
-cycloneive_io_obuf \saida[1]~output (
-	.i(\saida[1]~reg0_q ),
+cycloneive_io_obuf \out[1]~output (
+	.i(\out[1]~reg0_q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\saida[1]~output_o ),
+	.o(\out[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \saida[1]~output .bus_hold = "false";
-defparam \saida[1]~output .open_drain_output = "false";
+defparam \out[1]~output .bus_hold = "false";
+defparam \out[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOOBUF_X0_Y18_N23
-cycloneive_io_obuf \saida[2]~output (
-	.i(\saida[2]~reg0_q ),
+cycloneive_io_obuf \out[2]~output (
+	.i(\out[2]~reg0_q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\saida[2]~output_o ),
+	.o(\out[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \saida[2]~output .bus_hold = "false";
-defparam \saida[2]~output .open_drain_output = "false";
+defparam \out[2]~output .bus_hold = "false";
+defparam \out[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOOBUF_X0_Y18_N16
-cycloneive_io_obuf \saida[3]~output (
-	.i(\saida[3]~reg0_q ),
+cycloneive_io_obuf \out[3]~output (
+	.i(\out[3]~reg0_q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\saida[3]~output_o ),
+	.o(\out[3]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \saida[3]~output .bus_hold = "false";
-defparam \saida[3]~output .open_drain_output = "false";
+defparam \out[3]~output .bus_hold = "false";
+defparam \out[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOIBUF_X0_Y11_N8
@@ -161,20 +161,20 @@ defparam \clock~inputclkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N28
-cycloneive_lcell_comb \saida[0]~11 (
+cycloneive_lcell_comb \out[0]~11 (
 // Equation(s):
-// \saida[0]~11_combout  = !\saida[0]~reg0_q 
+// \out[0]~11_combout  = !\out[0]~reg0_q 
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\saida[0]~reg0_q ),
+	.datac(\out[0]~reg0_q ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\saida[0]~11_combout ),
+	.combout(\out[0]~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saida[0]~11 .lut_mask = 16'h0F0F;
-defparam \saida[0]~11 .sum_lutc_input = "datac";
+defparam \out[0]~11 .lut_mask = 16'h0F0F;
+defparam \out[0]~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: IOIBUF_X0_Y11_N15
@@ -201,9 +201,9 @@ defparam \reset~inputclkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
 // Location: FF_X1_Y18_N29
-dffeas \saida[0]~reg0 (
+dffeas \out[0]~reg0 (
 	.clk(\clock~inputclkctrl_outclk ),
-	.d(\saida[0]~11_combout ),
+	.d(\out[0]~11_combout ),
 	.asdata(vcc),
 	.clrn(!\reset~inputclkctrl_outclk ),
 	.aload(gnd),
@@ -212,70 +212,70 @@ dffeas \saida[0]~reg0 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\saida[0]~reg0_q ),
+	.q(\out[0]~reg0_q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \saida[0]~reg0 .is_wysiwyg = "true";
-defparam \saida[0]~reg0 .power_up = "low";
+defparam \out[0]~reg0 .is_wysiwyg = "true";
+defparam \out[0]~reg0 .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N8
-cycloneive_lcell_comb \saida[1]~4 (
+cycloneive_lcell_comb \out[1]~4 (
 // Equation(s):
-// \saida[1]~4_cout  = CARRY(\saida[0]~reg0_q )
+// \out[1]~4_cout  = CARRY(\out[0]~reg0_q )
 
 	.dataa(gnd),
-	.datab(\saida[0]~reg0_q ),
+	.datab(\out[0]~reg0_q ),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
 	.combout(),
-	.cout(\saida[1]~4_cout ));
+	.cout(\out[1]~4_cout ));
 // synopsys translate_off
-defparam \saida[1]~4 .lut_mask = 16'h00CC;
-defparam \saida[1]~4 .sum_lutc_input = "datac";
+defparam \out[1]~4 .lut_mask = 16'h00CC;
+defparam \out[1]~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N10
-cycloneive_lcell_comb \saida[1]~5 (
+cycloneive_lcell_comb \out[1]~5 (
 // Equation(s):
-// \saida[1]~5_combout  = (\saida[1]~reg0_q  & ((\cont~q  & (\saida[1]~4_cout  & VCC)) # (!\cont~q  & (!\saida[1]~4_cout )))) # (!\saida[1]~reg0_q  & ((\cont~q  & (!\saida[1]~4_cout )) # (!\cont~q  & ((\saida[1]~4_cout ) # (GND)))))
-// \saida[1]~6  = CARRY((\saida[1]~reg0_q  & (!\cont~q  & !\saida[1]~4_cout )) # (!\saida[1]~reg0_q  & ((!\saida[1]~4_cout ) # (!\cont~q ))))
+// \out[1]~5_combout  = (\out[1]~reg0_q  & ((\cont~q  & (\out[1]~4_cout  & VCC)) # (!\cont~q  & (!\out[1]~4_cout )))) # (!\out[1]~reg0_q  & ((\cont~q  & (!\out[1]~4_cout )) # (!\cont~q  & ((\out[1]~4_cout ) # (GND)))))
+// \out[1]~6  = CARRY((\out[1]~reg0_q  & (!\cont~q  & !\out[1]~4_cout )) # (!\out[1]~reg0_q  & ((!\out[1]~4_cout ) # (!\cont~q ))))
 
-	.dataa(\saida[1]~reg0_q ),
+	.dataa(\out[1]~reg0_q ),
 	.datab(\cont~q ),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\saida[1]~4_cout ),
-	.combout(\saida[1]~5_combout ),
-	.cout(\saida[1]~6 ));
+	.cin(\out[1]~4_cout ),
+	.combout(\out[1]~5_combout ),
+	.cout(\out[1]~6 ));
 // synopsys translate_off
-defparam \saida[1]~5 .lut_mask = 16'h9617;
-defparam \saida[1]~5 .sum_lutc_input = "cin";
+defparam \out[1]~5 .lut_mask = 16'h9617;
+defparam \out[1]~5 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N12
-cycloneive_lcell_comb \saida[2]~7 (
+cycloneive_lcell_comb \out[2]~7 (
 // Equation(s):
-// \saida[2]~7_combout  = ((\saida[2]~reg0_q  $ (\cont~q  $ (!\saida[1]~6 )))) # (GND)
-// \saida[2]~8  = CARRY((\saida[2]~reg0_q  & ((\cont~q ) # (!\saida[1]~6 ))) # (!\saida[2]~reg0_q  & (\cont~q  & !\saida[1]~6 )))
+// \out[2]~7_combout  = ((\out[2]~reg0_q  $ (\cont~q  $ (!\out[1]~6 )))) # (GND)
+// \out[2]~8  = CARRY((\out[2]~reg0_q  & ((\cont~q ) # (!\out[1]~6 ))) # (!\out[2]~reg0_q  & (\cont~q  & !\out[1]~6 )))
 
-	.dataa(\saida[2]~reg0_q ),
+	.dataa(\out[2]~reg0_q ),
 	.datab(\cont~q ),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\saida[1]~6 ),
-	.combout(\saida[2]~7_combout ),
-	.cout(\saida[2]~8 ));
+	.cin(\out[1]~6 ),
+	.combout(\out[2]~7_combout ),
+	.cout(\out[2]~8 ));
 // synopsys translate_off
-defparam \saida[2]~7 .lut_mask = 16'h698E;
-defparam \saida[2]~7 .sum_lutc_input = "cin";
+defparam \out[2]~7 .lut_mask = 16'h698E;
+defparam \out[2]~7 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X1_Y18_N13
-dffeas \saida[2]~reg0 (
+dffeas \out[2]~reg0 (
 	.clk(\clock~inputclkctrl_outclk ),
-	.d(\saida[2]~7_combout ),
+	.d(\out[2]~7_combout ),
 	.asdata(vcc),
 	.clrn(!\reset~inputclkctrl_outclk ),
 	.aload(gnd),
@@ -284,34 +284,34 @@ dffeas \saida[2]~reg0 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\saida[2]~reg0_q ),
+	.q(\out[2]~reg0_q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \saida[2]~reg0 .is_wysiwyg = "true";
-defparam \saida[2]~reg0 .power_up = "low";
+defparam \out[2]~reg0 .is_wysiwyg = "true";
+defparam \out[2]~reg0 .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N14
-cycloneive_lcell_comb \saida[3]~9 (
+cycloneive_lcell_comb \out[3]~9 (
 // Equation(s):
-// \saida[3]~9_combout  = \cont~q  $ (\saida[3]~reg0_q  $ (\saida[2]~8 ))
+// \out[3]~9_combout  = \cont~q  $ (\out[3]~reg0_q  $ (\out[2]~8 ))
 
 	.dataa(\cont~q ),
-	.datab(\saida[3]~reg0_q ),
+	.datab(\out[3]~reg0_q ),
 	.datac(gnd),
 	.datad(gnd),
-	.cin(\saida[2]~8 ),
-	.combout(\saida[3]~9_combout ),
+	.cin(\out[2]~8 ),
+	.combout(\out[3]~9_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saida[3]~9 .lut_mask = 16'h9696;
-defparam \saida[3]~9 .sum_lutc_input = "cin";
+defparam \out[3]~9 .lut_mask = 16'h9696;
+defparam \out[3]~9 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X1_Y18_N15
-dffeas \saida[3]~reg0 (
+dffeas \out[3]~reg0 (
 	.clk(\clock~inputclkctrl_outclk ),
-	.d(\saida[3]~9_combout ),
+	.d(\out[3]~9_combout ),
 	.asdata(vcc),
 	.clrn(!\reset~inputclkctrl_outclk ),
 	.aload(gnd),
@@ -320,22 +320,22 @@ dffeas \saida[3]~reg0 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\saida[3]~reg0_q ),
+	.q(\out[3]~reg0_q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \saida[3]~reg0 .is_wysiwyg = "true";
-defparam \saida[3]~reg0 .power_up = "low";
+defparam \out[3]~reg0 .is_wysiwyg = "true";
+defparam \out[3]~reg0 .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y18_N16
 cycloneive_lcell_comb \cont~0 (
 // Equation(s):
-// \cont~0_combout  = (\saida[2]~reg0_q  & (\saida[3]~reg0_q  & !\saida[0]~reg0_q )) # (!\saida[2]~reg0_q  & (!\saida[3]~reg0_q  & \saida[0]~reg0_q ))
+// \cont~0_combout  = (\out[2]~reg0_q  & (\out[3]~reg0_q  & !\out[0]~reg0_q )) # (!\out[2]~reg0_q  & (!\out[3]~reg0_q  & \out[0]~reg0_q ))
 
-	.dataa(\saida[2]~reg0_q ),
+	.dataa(\out[2]~reg0_q ),
 	.datab(gnd),
-	.datac(\saida[3]~reg0_q ),
-	.datad(\saida[0]~reg0_q ),
+	.datac(\out[3]~reg0_q ),
+	.datad(\out[0]~reg0_q ),
 	.cin(gnd),
 	.combout(\cont~0_combout ),
 	.cout());
@@ -347,10 +347,10 @@ defparam \cont~0 .sum_lutc_input = "datac";
 // Location: LCCOMB_X1_Y18_N2
 cycloneive_lcell_comb \cont~1 (
 // Equation(s):
-// \cont~1_combout  = (\saida[2]~reg0_q  & ((\cont~q ) # ((\saida[1]~reg0_q  & \cont~0_combout )))) # (!\saida[2]~reg0_q  & (\cont~q  & ((\saida[1]~reg0_q ) # (!\cont~0_combout ))))
+// \cont~1_combout  = (\out[2]~reg0_q  & ((\cont~q ) # ((\out[1]~reg0_q  & \cont~0_combout )))) # (!\out[2]~reg0_q  & (\cont~q  & ((\out[1]~reg0_q ) # (!\cont~0_combout ))))
 
-	.dataa(\saida[2]~reg0_q ),
-	.datab(\saida[1]~reg0_q ),
+	.dataa(\out[2]~reg0_q ),
+	.datab(\out[1]~reg0_q ),
 	.datac(\cont~q ),
 	.datad(\cont~0_combout ),
 	.cin(gnd),
@@ -381,9 +381,9 @@ defparam cont.power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X1_Y18_N11
-dffeas \saida[1]~reg0 (
+dffeas \out[1]~reg0 (
 	.clk(\clock~inputclkctrl_outclk ),
-	.d(\saida[1]~5_combout ),
+	.d(\out[1]~5_combout ),
 	.asdata(vcc),
 	.clrn(!\reset~inputclkctrl_outclk ),
 	.aload(gnd),
@@ -392,19 +392,19 @@ dffeas \saida[1]~reg0 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\saida[1]~reg0_q ),
+	.q(\out[1]~reg0_q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \saida[1]~reg0 .is_wysiwyg = "true";
-defparam \saida[1]~reg0 .power_up = "low";
+defparam \out[1]~reg0 .is_wysiwyg = "true";
+defparam \out[1]~reg0 .power_up = "low";
 // synopsys translate_on
 
-assign saida[0] = \saida[0]~output_o ;
+assign out[0] = \out[0]~output_o ;
 
-assign saida[1] = \saida[1]~output_o ;
+assign out[1] = \out[1]~output_o ;
 
-assign saida[2] = \saida[2]~output_o ;
+assign out[2] = \out[2]~output_o ;
 
-assign saida[3] = \saida[3]~output_o ;
+assign out[3] = \out[3]~output_o ;
 
 endmodule

@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Contador_VL")
-  (DATE "11/22/2016 09:26:16")
+  (DATE "11/22/2016 09:48:23")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition")
@@ -39,7 +39,7 @@
 
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE saida\[0\]\~output)
+    (INSTANCE out\[0\]\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (374:374:374) (445:445:445))
@@ -49,7 +49,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE saida\[1\]\~output)
+    (INSTANCE out\[1\]\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (465:465:465) (534:534:534))
@@ -59,7 +59,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE saida\[2\]\~output)
+    (INSTANCE out\[2\]\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (190:190:190) (227:227:227))
@@ -69,7 +69,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE saida\[3\]\~output)
+    (INSTANCE out\[3\]\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (189:189:189) (225:225:225))
@@ -97,7 +97,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE saida\[0\]\~11)
+    (INSTANCE out\[0\]\~11)
     (DELAY
       (ABSOLUTE
         (IOPATH datac combout (181:181:181) (184:184:184))
@@ -124,7 +124,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE saida\[0\]\~reg0)
+    (INSTANCE out\[0\]\~reg0)
     (DELAY
       (ABSOLUTE
         (PORT clk (731:731:731) (751:751:751))
@@ -140,7 +140,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE saida\[1\]\~4)
+    (INSTANCE out\[1\]\~4)
     (DELAY
       (ABSOLUTE
         (PORT datab (137:137:137) (186:186:186))
@@ -150,7 +150,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE saida\[1\]\~5)
+    (INSTANCE out\[1\]\~5)
     (DELAY
       (ABSOLUTE
         (PORT dataa (135:135:135) (186:186:186))
@@ -167,7 +167,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE saida\[2\]\~7)
+    (INSTANCE out\[2\]\~7)
     (DELAY
       (ABSOLUTE
         (PORT dataa (146:146:146) (202:202:202))
@@ -184,7 +184,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE saida\[2\]\~reg0)
+    (INSTANCE out\[2\]\~reg0)
     (DELAY
       (ABSOLUTE
         (PORT clk (731:731:731) (751:751:751))
@@ -200,7 +200,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE saida\[3\]\~9)
+    (INSTANCE out\[3\]\~9)
     (DELAY
       (ABSOLUTE
         (PORT dataa (219:219:219) (274:274:274))
@@ -213,7 +213,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE saida\[3\]\~reg0)
+    (INSTANCE out\[3\]\~reg0)
     (DELAY
       (ABSOLUTE
         (PORT clk (731:731:731) (751:751:751))
@@ -274,7 +274,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE saida\[1\]\~reg0)
+    (INSTANCE out\[1\]\~reg0)
     (DELAY
       (ABSOLUTE
         (PORT clk (731:731:731) (751:751:751))

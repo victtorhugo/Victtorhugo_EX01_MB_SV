@@ -4,19 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "saida[0]",
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[1]",
+					"name" : "out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[2]",
+					"name" : "out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[3]",
+					"name" : "out[3]",
 					"strict" : false
 				},
 				{
